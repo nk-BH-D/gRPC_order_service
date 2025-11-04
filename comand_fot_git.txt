@@ -1,0 +1,22 @@
+cd directory
+
+инициализация
+git init
+
+упаковка файлов
+git add .
+
+назначение комита
+git commit -m "first commit" (пример)
+
+путь до репозитория
+
+git remote add origin https://gitlab.crja72.ru/golang/2025/spring/course/tasks/template.git (пример)
+
+ветка
+
+git branch -M main
+
+пуш
+
+git push -u origin main
