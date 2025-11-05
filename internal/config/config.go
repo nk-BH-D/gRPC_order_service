@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/joho/godotenv"
+	env "github.com/joho/godotenv"
 )
 
 type Config struct {
@@ -12,7 +12,7 @@ type Config struct {
 }
 
 func Loader() *Config {
-	err := godotenv.Load(".env")
+	err := env.Load()
 	if err != nil {
 		log.Printf("%v, used default value", err)
 	}
