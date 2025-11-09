@@ -3,7 +3,7 @@
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             v6.33.0
 // source: order.proto
-// RegisterOrderServiceServer
+
 package test
 
 import (

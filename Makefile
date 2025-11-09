@@ -4,6 +4,8 @@ GOOGLE_APIS=api/googleapis
 
 .PHONY: proto build run
 
+all: proto build run
+
 proto:
 	protoc -I ${PROTO_DIR} -I ${GOOGLE_APIS} \
 		--go_out ${OUT_DIR} --go_opt paths=source_relative \

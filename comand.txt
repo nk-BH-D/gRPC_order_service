@@ -1,9 +1,23 @@
-grpcurl -plaintext -proto api/order.proto -d "{\"item\":\"iPhone 52 Pro Max\",\"quantity\":5}" localhost:50051 api.OrderService/CreateOrder
+grpcurl -plaintext -d "{\"item\":\"iPhone 52 Pro Max\",\"quantity\":5}" localhost:50051 api.OrderService/CreateOrder
 
-grpcurl -plaintext -proto api/order.proto -d "{\"id\":\"your id\"}" localhost:50051 api.OrderService/GetOrder
+grpcurl -plaintext -d "{\"id\":\"your_id\"}" localhost:50051 api.OrderService/GetOrder
 
-grpcurl -plaintext -proto api/order.proto -d "{\"id\":\"your id\", \"item\":\"GameLaptop\", \"quantity\":\"4\"}" localhost:50051 api.OrderService/UpdateOrder
+grpcurl -plaintext -d "{\"id\":\"your_id\", \"item\":\"GameLaptop\", \"quantity\":\"4\"}" localhost:50051 api.OrderService/UpdateOrder
 
-grpcurl -plaintext -proto api/order.proto -d "" localhost:50051 api.OrderService/ListOrders
+grpcurl -plaintext -d "" localhost:50051 api.OrderService/ListOrders
 
-grpcurl -plaintext -proto api/order.proto -d "{\"id\":\"your id\"}" localhost:50051 api.OrderService/DeleteOrder
+grpcurl -plaintext -d "{\"id\":\"your_id\"}" localhost:50051 api.OrderService/DeleteOrder
+
+curl -X POST http://localhost:8080/5.1/order \
+  -H "Content-Type: application/json" \
+  -d '{"item": "Laptop", "quantity": 2}'
+
+curl -X GET http://localhost:8080/5.1/order/your_id
+
+curl -X PUT http://localhost:8080/5.1/order/your_id \
+  -H "Content-Type: application/json" \
+  -d '{"item": "Tablet", "quantity": 5}'
+
+curl -X DELETE http://localhost:8080/5.1/order/your_id
+
+curl -X GET http://localhost:8080/5.1/orders

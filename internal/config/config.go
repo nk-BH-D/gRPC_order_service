@@ -8,7 +8,8 @@ import (
 )
 
 type Config struct {
-	Port string
+	GRPC_Port string
+	HTTP_Port string
 }
 
 func Loader() *Config {
@@ -17,10 +18,18 @@ func Loader() *Config {
 		log.Printf("%v, used default value", err)
 	}
 
-	port := os.Getenv("GRPC_PORT")
-	if port == "" {
-		port = "50051"
+	grpc_port := os.Getenv("GRPC_PORT")
+	if grpc_port == "" {
+		grpc_port = "50051"
 	}
 
-	return &Config{Port: port}
+	http_port := os.Getenv("HTTP_PORT")
+	if http_port == "" {
+		http_port = "8080"
+	}
+
+	return &Config{
+		GRPC_Port: grpc_port,
+		HTTP_Port: http_port,
+	}
 }

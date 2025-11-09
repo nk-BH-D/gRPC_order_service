@@ -7,6 +7,7 @@
 package test
 
 import (
+	_ "google.golang.org/genproto/googleapis/api/annotations"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -541,7 +542,7 @@ var File_order_proto protoreflect.FileDescriptor
 
 const file_order_proto_rawDesc = "" +
 	"\n" +
-	"\vorder.proto\x12\x03api\"G\n" +
+	"\vorder.proto\x12\x03api\x1a\x1cgoogle/api/annotations.proto\"G\n" +
 	"\x05Order\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\tR\x02id\x12\x12\n" +
 	"\x04item\x18\x02 \x01(\tR\x04item\x12\x1a\n" +
@@ -570,14 +571,15 @@ const file_order_proto_rawDesc = "" +
 	"\x11ListOrdersRequest\"8\n" +
 	"\x12ListOrdersResponse\x12\"\n" +
 	"\x06orders\x18\x01 \x03(\v2\n" +
-	".api.OrderR\x06orders2\xcc\x02\n" +
-	"\fOrderService\x12@\n" +
-	"\vCreateOrder\x12\x17.api.CreateOrderRequest\x1a\x18.api.CreateOrderResponse\x127\n" +
-	"\bGetOrder\x12\x14.api.GetOrderRequest\x1a\x15.api.GetOrderResponse\x12@\n" +
-	"\vUpdateOrder\x12\x17.api.UpdateOrderRequest\x1a\x18.api.UpdateOrderResponse\x12@\n" +
-	"\vDeleteOrder\x12\x17.api.DeleteOrderRequest\x1a\x18.api.DeleteOrderResponse\x12=\n" +
+	".api.OrderR\x06orders2\xc6\x03\n" +
+	"\fOrderService\x12W\n" +
+	"\vCreateOrder\x12\x17.api.CreateOrderRequest\x1a\x18.api.CreateOrderResponse\"\x15\x82\xd3\xe4\x93\x02\x0f:\x01*\"\n" +
+	"/5.1/order\x12P\n" +
+	"\bGetOrder\x12\x14.api.GetOrderRequest\x1a\x15.api.GetOrderResponse\"\x17\x82\xd3\xe4\x93\x02\x11\x12\x0f/5.1/order/{id}\x12\\\n" +
+	"\vUpdateOrder\x12\x17.api.UpdateOrderRequest\x1a\x18.api.UpdateOrderResponse\"\x1a\x82\xd3\xe4\x93\x02\x14:\x01*\x1a\x0f/5.1/order/{id}\x12Y\n" +
+	"\vDeleteOrder\x12\x17.api.DeleteOrderRequest\x1a\x18.api.DeleteOrderResponse\"\x17\x82\xd3\xe4\x93\x02\x11*\x0f/5.1/order/{id}\x12R\n" +
 	"\n" +
-	"ListOrders\x12\x16.api.ListOrdersRequest\x1a\x17.api.ListOrdersResponseB\x0eZ\fpkg/api/testb\x06proto3"
+	"ListOrders\x12\x16.api.ListOrdersRequest\x1a\x17.api.ListOrdersResponse\"\x13\x82\xd3\xe4\x93\x02\r\x12\v/5.1/ordersB\x0eZ\fpkg/api/testb\x06proto3"
 
 var (
 	file_order_proto_rawDescOnce sync.Once
