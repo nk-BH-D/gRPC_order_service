@@ -11,16 +11,20 @@ git commit -m "first commit" (пример)
 
 путь до репозитория
 
-git remote add origin https://gitlab.crja72.ru/golang/2025/spring/course/tasks/template.git (пример)
+git remote add name https://gitlab.crja72.ru/golang/2025/spring/course/tasks/template.git (пример)
 
 ветка
 
-git branch -M main
+git branch -M веткаname
 
 пуш
 
-git push -u origin main(пример) -u только при первом
+git push -u name веткаname(пример) -u только при первом
 
 просмотр удалённых репозиториев
 
 git remote -v
+
+подгруз из удалённого репозитория
+
+git pull --rebase name веткаname
