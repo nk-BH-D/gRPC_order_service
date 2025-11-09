@@ -19,4 +19,9 @@ git branch -M main
 
 пуш
 
-git push -u origin main(пример)
+git push -u origin main(пример) -u только при первом комите
+
+
+просмотр удалённых репозиториев
+
+git remote -v
