@@ -1,9 +1,11 @@
 # gRPC_order_service
 
-# Описание
+## Описание
+
 Сервис для обработки заказов на базе gRPC обработчика
 
-# Команды
+## Команды
+
 grpcurl -plaintext -d '{"item":"iPhone 52 Pro Max","quantity":5}' localhost:50051 api.OrderService/CreateOrder
 
 grpcurl -plaintext -d '{"id":"your_id"}' localhost:50051 api.OrderService/GetOrder
@@ -14,16 +16,16 @@ grpcurl -plaintext -d '{}' localhost:50051 api.OrderService/ListOrders
 
 grpcurl -plaintext -d '{"id":"your_id"}' localhost:50051 api.OrderService/DeleteOrder
 
-curl -X POST http://localhost:8080/5.1/order \
+curl -X POST [http://localhost:8080/5.1/order](http://localhost:8080/5.1/order) \
   -H "Content-Type: application/json" \
   -d '{"item": "Laptop", "quantity": 2}'
 
-curl -X GET http://localhost:8080/5.1/order/your_id
+curl -X GET [http://localhost:8080/5.1/order/your_id](http://localhost:8080/5.1/order/your_id)
 
-curl -X PUT http://localhost:8080/5.1/order/your_id \
+curl -X PUT [http://localhost:8080/5.1/order/your_id](http://localhost:8080/5.1/order/your_id) \
   -H "Content-Type: application/json" \
   -d '{"item": "Tablet", "quantity": 5}'
 
-curl -X DELETE http://localhost:8080/5.1/order/your_id
+curl -X DELETE [http://localhost:8080/5.1/order/your_id](http://localhost:8080/5.1/order/your_id)
 
-curl -X GET http://localhost:8080/5.1/orders
+curl -X GET [http://localhost:8080/5.1/orders](http://localhost:8080/5.1/orders)
