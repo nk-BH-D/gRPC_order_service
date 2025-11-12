@@ -218,7 +218,7 @@ func RegisterOrderServiceHandlerServer(ctx context.Context, mux *runtime.ServeMu
 		var stream runtime.ServerTransportStream
 		ctx = grpc.NewContextWithServerTransportStream(ctx, &stream)
 		inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)
-		annotatedContext, err := runtime.AnnotateIncomingContext(ctx, mux, req, "/api.OrderService/CreateOrder", runtime.WithHTTPPathPattern("/5.1/order"))
+		annotatedContext, err := runtime.AnnotateIncomingContext(ctx, mux, req, "/api.OrderService/CreateOrder", runtime.WithHTTPPathPattern("/BH/order"))
 		if err != nil {
 			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
 			return
@@ -238,7 +238,7 @@ func RegisterOrderServiceHandlerServer(ctx context.Context, mux *runtime.ServeMu
 		var stream runtime.ServerTransportStream
 		ctx = grpc.NewContextWithServerTransportStream(ctx, &stream)
 		inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)
-		annotatedContext, err := runtime.AnnotateIncomingContext(ctx, mux, req, "/api.OrderService/GetOrder", runtime.WithHTTPPathPattern("/5.1/order/{id}"))
+		annotatedContext, err := runtime.AnnotateIncomingContext(ctx, mux, req, "/api.OrderService/GetOrder", runtime.WithHTTPPathPattern("/BH/order/{id}"))
 		if err != nil {
 			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
 			return
@@ -258,7 +258,7 @@ func RegisterOrderServiceHandlerServer(ctx context.Context, mux *runtime.ServeMu
 		var stream runtime.ServerTransportStream
 		ctx = grpc.NewContextWithServerTransportStream(ctx, &stream)
 		inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)
-		annotatedContext, err := runtime.AnnotateIncomingContext(ctx, mux, req, "/api.OrderService/UpdateOrder", runtime.WithHTTPPathPattern("/5.1/order/{id}"))
+		annotatedContext, err := runtime.AnnotateIncomingContext(ctx, mux, req, "/api.OrderService/UpdateOrder", runtime.WithHTTPPathPattern("/BH/order/{id}"))
 		if err != nil {
 			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
 			return
@@ -278,7 +278,7 @@ func RegisterOrderServiceHandlerServer(ctx context.Context, mux *runtime.ServeMu
 		var stream runtime.ServerTransportStream
 		ctx = grpc.NewContextWithServerTransportStream(ctx, &stream)
 		inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)
-		annotatedContext, err := runtime.AnnotateIncomingContext(ctx, mux, req, "/api.OrderService/DeleteOrder", runtime.WithHTTPPathPattern("/5.1/order/{id}"))
+		annotatedContext, err := runtime.AnnotateIncomingContext(ctx, mux, req, "/api.OrderService/DeleteOrder", runtime.WithHTTPPathPattern("/BH/order/{id}"))
 		if err != nil {
 			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
 			return
@@ -298,7 +298,7 @@ func RegisterOrderServiceHandlerServer(ctx context.Context, mux *runtime.ServeMu
 		var stream runtime.ServerTransportStream
 		ctx = grpc.NewContextWithServerTransportStream(ctx, &stream)
 		inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)
-		annotatedContext, err := runtime.AnnotateIncomingContext(ctx, mux, req, "/api.OrderService/ListOrders", runtime.WithHTTPPathPattern("/5.1/orders"))
+		annotatedContext, err := runtime.AnnotateIncomingContext(ctx, mux, req, "/api.OrderService/ListOrders", runtime.WithHTTPPathPattern("/BH/orders"))
 		if err != nil {
 			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
 			return
@@ -356,7 +356,7 @@ func RegisterOrderServiceHandlerClient(ctx context.Context, mux *runtime.ServeMu
 		ctx, cancel := context.WithCancel(req.Context())
 		defer cancel()
 		inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)
-		annotatedContext, err := runtime.AnnotateContext(ctx, mux, req, "/api.OrderService/CreateOrder", runtime.WithHTTPPathPattern("/5.1/order"))
+		annotatedContext, err := runtime.AnnotateContext(ctx, mux, req, "/api.OrderService/CreateOrder", runtime.WithHTTPPathPattern("/BH/order"))
 		if err != nil {
 			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
 			return
@@ -373,7 +373,7 @@ func RegisterOrderServiceHandlerClient(ctx context.Context, mux *runtime.ServeMu
 		ctx, cancel := context.WithCancel(req.Context())
 		defer cancel()
 		inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)
-		annotatedContext, err := runtime.AnnotateContext(ctx, mux, req, "/api.OrderService/GetOrder", runtime.WithHTTPPathPattern("/5.1/order/{id}"))
+		annotatedContext, err := runtime.AnnotateContext(ctx, mux, req, "/api.OrderService/GetOrder", runtime.WithHTTPPathPattern("/BH/order/{id}"))
 		if err != nil {
 			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
 			return
@@ -390,7 +390,7 @@ func RegisterOrderServiceHandlerClient(ctx context.Context, mux *runtime.ServeMu
 		ctx, cancel := context.WithCancel(req.Context())
 		defer cancel()
 		inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)
-		annotatedContext, err := runtime.AnnotateContext(ctx, mux, req, "/api.OrderService/UpdateOrder", runtime.WithHTTPPathPattern("/5.1/order/{id}"))
+		annotatedContext, err := runtime.AnnotateContext(ctx, mux, req, "/api.OrderService/UpdateOrder", runtime.WithHTTPPathPattern("/BH/order/{id}"))
 		if err != nil {
 			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
 			return
@@ -407,7 +407,7 @@ func RegisterOrderServiceHandlerClient(ctx context.Context, mux *runtime.ServeMu
 		ctx, cancel := context.WithCancel(req.Context())
 		defer cancel()
 		inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)
-		annotatedContext, err := runtime.AnnotateContext(ctx, mux, req, "/api.OrderService/DeleteOrder", runtime.WithHTTPPathPattern("/5.1/order/{id}"))
+		annotatedContext, err := runtime.AnnotateContext(ctx, mux, req, "/api.OrderService/DeleteOrder", runtime.WithHTTPPathPattern("/BH/order/{id}"))
 		if err != nil {
 			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
 			return
@@ -424,7 +424,7 @@ func RegisterOrderServiceHandlerClient(ctx context.Context, mux *runtime.ServeMu
 		ctx, cancel := context.WithCancel(req.Context())
 		defer cancel()
 		inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)
-		annotatedContext, err := runtime.AnnotateContext(ctx, mux, req, "/api.OrderService/ListOrders", runtime.WithHTTPPathPattern("/5.1/orders"))
+		annotatedContext, err := runtime.AnnotateContext(ctx, mux, req, "/api.OrderService/ListOrders", runtime.WithHTTPPathPattern("/BH/orders"))
 		if err != nil {
 			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
 			return
@@ -441,11 +441,11 @@ func RegisterOrderServiceHandlerClient(ctx context.Context, mux *runtime.ServeMu
 }
 
 var (
-	pattern_OrderService_CreateOrder_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1}, []string{"5.1", "order"}, ""))
-	pattern_OrderService_GetOrder_0    = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 1, 0, 4, 1, 5, 2}, []string{"5.1", "order", "id"}, ""))
-	pattern_OrderService_UpdateOrder_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 1, 0, 4, 1, 5, 2}, []string{"5.1", "order", "id"}, ""))
-	pattern_OrderService_DeleteOrder_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 1, 0, 4, 1, 5, 2}, []string{"5.1", "order", "id"}, ""))
-	pattern_OrderService_ListOrders_0  = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1}, []string{"5.1", "orders"}, ""))
+	pattern_OrderService_CreateOrder_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1}, []string{"BH", "order"}, ""))
+	pattern_OrderService_GetOrder_0    = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 1, 0, 4, 1, 5, 2}, []string{"BH", "order", "id"}, ""))
+	pattern_OrderService_UpdateOrder_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 1, 0, 4, 1, 5, 2}, []string{"BH", "order", "id"}, ""))
+	pattern_OrderService_DeleteOrder_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 1, 0, 4, 1, 5, 2}, []string{"BH", "order", "id"}, ""))
+	pattern_OrderService_ListOrders_0  = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1}, []string{"BH", "orders"}, ""))
 )
 
 var (

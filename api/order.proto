@@ -9,25 +9,25 @@ import "google/api/annotations.proto";
 service OrderService {
   rpc CreateOrder(CreateOrderRequest) returns (CreateOrderResponse) {
     option (google.api.http) = {
-      post: "/5.1/order"
+      post: "/BH/order"
       body: "*"
     };
   }
   rpc GetOrder(GetOrderRequest) returns (GetOrderResponse) {
-    option (google.api.http) = {get: "/5.1/order/{id}"};
+    option (google.api.http) = {get: "/BH/order/{id}"};
   }
   rpc UpdateOrder(UpdateOrderRequest) returns (UpdateOrderResponse) {
     option (google.api.http) = {
-      put: "/5.1/order/{id}"
+      put: "/BH/order/{id}"
       body: "*"
     };
   }
   rpc DeleteOrder(DeleteOrderRequest) returns (DeleteOrderResponse) {
-    option (google.api.http) = {delete: "/5.1/order/{id}"};
+    option (google.api.http) = {delete: "/BH/order/{id}"};
   }
   
   rpc ListOrders(ListOrdersRequest) returns (ListOrdersResponse) {
-    option (google.api.http) = {get: "/5.1/orders"};
+    option (google.api.http) = {get: "/BH/orders"};
   }
 }
 

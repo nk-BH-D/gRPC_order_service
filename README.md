@@ -48,7 +48,7 @@ localhost:50051 api.OrderService/ListOrders
 **Создание заказа**:
 
 ```bash
-curl -X POST http://localhost:8080/5.1/order \
+curl -X POST http://localhost:8080/BH/order \
   -H "Content-Type: application/json" \
   -d '{"item": "Laptop", "quantity": 2}'
 ```
@@ -56,13 +56,13 @@ curl -X POST http://localhost:8080/5.1/order \
 **Получение заказа по ID**:
 
 ```bash
-curl -X GET http://localhost:8080/5.1/order/your_id
+curl -X GET http://localhost:8080/BH/order/your_id
 ```
 
 **Обновление заказа по ID**:
 
 ```bash
-curl -X PUT http://localhost:8080/5.1/order/your_id \
+curl -X PUT http://localhost:8080/BH/order/your_id \
   -H "Content-Type: application/json" \
   -d '{"item": "Tablet", "quantity": 5}'
 ```
@@ -70,11 +70,11 @@ curl -X PUT http://localhost:8080/5.1/order/your_id \
 **Удаление заказа по ID**:
 
 ```bash
-curl -X DELETE http://localhost:8080/5.1/order/your_id
+curl -X DELETE http://localhost:8080/BH/order/your_id
 ```
 
 **Получение списка всех заказов**:
 
 ```bash
-curl -X GET http://localhost:8080/5.1/orders
+curl -X GET http://localhost:8080/BH/orders
 ```

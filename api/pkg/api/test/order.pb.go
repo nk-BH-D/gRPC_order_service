@@ -571,15 +571,15 @@ const file_order_proto_rawDesc = "" +
 	"\x11ListOrdersRequest\"8\n" +
 	"\x12ListOrdersResponse\x12\"\n" +
 	"\x06orders\x18\x01 \x03(\v2\n" +
-	".api.OrderR\x06orders2\xc6\x03\n" +
-	"\fOrderService\x12W\n" +
-	"\vCreateOrder\x12\x17.api.CreateOrderRequest\x1a\x18.api.CreateOrderResponse\"\x15\x82\xd3\xe4\x93\x02\x0f:\x01*\"\n" +
-	"/5.1/order\x12P\n" +
-	"\bGetOrder\x12\x14.api.GetOrderRequest\x1a\x15.api.GetOrderResponse\"\x17\x82\xd3\xe4\x93\x02\x11\x12\x0f/5.1/order/{id}\x12\\\n" +
-	"\vUpdateOrder\x12\x17.api.UpdateOrderRequest\x1a\x18.api.UpdateOrderResponse\"\x1a\x82\xd3\xe4\x93\x02\x14:\x01*\x1a\x0f/5.1/order/{id}\x12Y\n" +
-	"\vDeleteOrder\x12\x17.api.DeleteOrderRequest\x1a\x18.api.DeleteOrderResponse\"\x17\x82\xd3\xe4\x93\x02\x11*\x0f/5.1/order/{id}\x12R\n" +
+	".api.OrderR\x06orders2\xc1\x03\n" +
+	"\fOrderService\x12V\n" +
+	"\vCreateOrder\x12\x17.api.CreateOrderRequest\x1a\x18.api.CreateOrderResponse\"\x14\x82\xd3\xe4\x93\x02\x0e:\x01*\"\t/BH/order\x12O\n" +
+	"\bGetOrder\x12\x14.api.GetOrderRequest\x1a\x15.api.GetOrderResponse\"\x16\x82\xd3\xe4\x93\x02\x10\x12\x0e/BH/order/{id}\x12[\n" +
+	"\vUpdateOrder\x12\x17.api.UpdateOrderRequest\x1a\x18.api.UpdateOrderResponse\"\x19\x82\xd3\xe4\x93\x02\x13:\x01*\x1a\x0e/BH/order/{id}\x12X\n" +
+	"\vDeleteOrder\x12\x17.api.DeleteOrderRequest\x1a\x18.api.DeleteOrderResponse\"\x16\x82\xd3\xe4\x93\x02\x10*\x0e/BH/order/{id}\x12Q\n" +
 	"\n" +
-	"ListOrders\x12\x16.api.ListOrdersRequest\x1a\x17.api.ListOrdersResponse\"\x13\x82\xd3\xe4\x93\x02\r\x12\v/5.1/ordersB\x0eZ\fpkg/api/testb\x06proto3"
+	"ListOrders\x12\x16.api.ListOrdersRequest\x1a\x17.api.ListOrdersResponse\"\x12\x82\xd3\xe4\x93\x02\f\x12\n" +
+	"/BH/ordersB\x0eZ\fpkg/api/testb\x06proto3"
 
 var (
 	file_order_proto_rawDescOnce sync.Once
