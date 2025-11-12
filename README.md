@@ -32,15 +32,15 @@ localhost:50051 api.OrderService/UpdateOrder
 **Удаление заказа по ID**:
 
 ```bash
-grpcurl -plaintext -d '{}' \
-localhost:50051 api.OrderService/ListOrders
+grpcurl -plaintext -d '{"id":"your_id"}' \
+localhost:50051 api.OrderService/DeleteOrder
 ```
 
 **Получение списка всех заказов**:
 
 ```bash
-grpcurl -plaintext -d '{"id":"your_id"}' \
-localhost:50051 api.OrderService/DeleteOrder
+grpcurl -plaintext -d '{}' \
+localhost:50051 api.OrderService/ListOrders
 ```
 
 ### Примеры с использованием curl
