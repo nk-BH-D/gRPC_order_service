@@ -11,11 +11,11 @@ import (
 	"syscall"
 	"time"
 
-	pb "github.com/nk-BH-D/three_one/api/pkg/api/test"
-	config "github.com/nk-BH-D/three_one/internal/config"
-	interceptor "github.com/nk-BH-D/three_one/internal/interceptor"
-	order_db "github.com/nk-BH-D/three_one/internal/order_db"
-	service "github.com/nk-BH-D/three_one/internal/service"
+	pb "github.com/nk-BH-D/gRPC_os/api/pkg/api/test"
+	config "github.com/nk-BH-D/gRPC_os/internal/config"
+	interceptor "github.com/nk-BH-D/gRPC_os/internal/interceptor"
+	order_db "github.com/nk-BH-D/gRPC_os/internal/order_db"
+	service "github.com/nk-BH-D/gRPC_os/internal/service"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
 	"google.golang.org/grpc"

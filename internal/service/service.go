@@ -3,11 +3,12 @@ package service
 import (
 	"context"
 	"database/sql"
+
 	//"sync"
 
 	"github.com/google/uuid"
-	pb "github.com/nk-BH-D/three_one/api/pkg/api/test"
-	order_db "github.com/nk-BH-D/three_one/internal/order_db"
+	pb "github.com/nk-BH-D/gRPC_os/api/pkg/api/test"
+	order_db "github.com/nk-BH-D/gRPC_os/internal/order_db"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

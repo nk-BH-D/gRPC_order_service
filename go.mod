@@ -1,4 +1,4 @@
-module github.com/nk-BH-D/three_one
+module github.com/nk-BH-D/gRPC_os
 
 go 1.25.2
 
