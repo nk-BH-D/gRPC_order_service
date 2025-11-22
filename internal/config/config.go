@@ -14,7 +14,6 @@ type Config struct {
 	DB_URL    string
 }
 
-// []
 func Loader() *Config {
 	err := env.Load()
 	if err != nil {
