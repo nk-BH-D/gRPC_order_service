@@ -39,7 +39,10 @@ services:
     command: 
       - "sh"
       - "-c"
-      - "until pg_isready -h db -p ${POSTGRES_PORT} -U ${POSTGRES_USER}; do echo waiting for postgres; sleep 1; done; /app-bin"
+      - >
+       until pg_isready -h db -p ${POSTGRES_PORT} -U ${POSTGRES_USER}; 
+       do echo waiting for postgres; sleep 1; done;
+       /app-bin
     healthcheck:
       test: 
       - "CMD-SHELL"

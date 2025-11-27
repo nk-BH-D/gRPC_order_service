@@ -2,10 +2,9 @@ package config
 
 import (
 	"fmt"
-	"log"
+	//log"
 	"os"
-
-	env "github.com/joho/godotenv"
+	//env "github.com/joho/godotenv"
 )
 
 type Config struct {
@@ -15,10 +14,10 @@ type Config struct {
 }
 
 func Loader() *Config {
-	err := env.Load()
-	if err != nil {
-		log.Printf("%v, used default value", err)
-	}
+	//err := env.Load()
+	//if err != nil {
+	//	log.Printf("%v, used default value", err)
+	//}
 
 	grpc_port := os.Getenv("GRPC_PORT")
 	if grpc_port == "" {
